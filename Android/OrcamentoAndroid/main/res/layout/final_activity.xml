@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".FinalActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="@string/description"
+        android:src="@mipmap/jato"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mostrar_cidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simular"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/backView"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/mostrar_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simular"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/backView"
+        app:layout_constraintTop_toBottomOf="@id/mostrar_cidade"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/mostrar_quantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simular"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/backView"
+        app:layout_constraintTop_toBottomOf="@id/mostrar_marca"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/mostrar_taxa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simular"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/backView"
+        app:layout_constraintTop_toBottomOf="@id/mostrar_quantidade"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/mostrar_precounit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simular"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/backView"
+        app:layout_constraintTop_toBottomOf="@id/mostrar_taxa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/mostrar_precototal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simular"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/backView"
+        app:layout_constraintTop_toBottomOf="@id/mostrar_precounit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mostrar_precototal">
+
+        <Button
+            android:id="@+id/botaoNovo"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#4CAF50"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="10dp"
+            android:text="@string/novo_orcamento"
+            android:textColor="#f6f6f6"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/botaoConfirmarPedido"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="#4CAF50"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="10dp"
+            android:text="@string/confirmar_pedido"
+            android:textColor="#f6f6f6"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

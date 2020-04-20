@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Componentes</string>
+    <string name="simular">ORÇAMENTO</string>
+    <string name="orcamento">Solicite seu orçamento de \n Cloro</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="description">Logo</string>
+    <string name="endereco">Endereço</string>
+    <string name="telefone_responsavel">Telefone Responsável</string>
+    <string name="nome_responsavel">Nome Responsável</string>
+    <string name="endereco_entrega">Endereço Entrega</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="campo_null">O campo de texto está vazio</string>
+    <string name="cidade">Cidade</string>
+    <string name="spinner_marca">Spinner Marca</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="confirmar_pedido">Confirmar Pedido</string>
+    <string name="voltar">Voltar</string>
+    <string name="alert_thanks">Obrigada pela confiança! Em breve nossa equipe entrará em contato com você!</string>
+    <string name="novo_orcamento">Novo orçamento</string>
+</resources>

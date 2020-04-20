@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NamesList</string>
+    <string name="cancelar">Cancel</string>
+    <string name="sucess_add">The name was added with success!</string>
+    <string name="sucess_remove">The item was removed with success!</string>
+    <string name="edit_null">Please choose a name</string>
+    <string name="sim">Yes</string>
+    <string name="remover">Remove the name</string>
+    <string name="deseja_remover">Do you really want to remove this name?</string>
+    <string name="title_names">Names List</string>
+    <string name="description">Add a name, give a click to see the name and a long click to remove</string>
+    <string name="add_a_name">Add a name</string>
+    <string name="name">Name</string>
+    <string name="click_here_to_add">Click here to add</string>
+</resources>
