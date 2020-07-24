@@ -22,11 +22,11 @@ public class Exercicio01 {
 		// 1. d)
 		
 		System.out.println("O valor 0 do vetor A é de " + A[0]);
-		System.out.println("O valor 0 do vetor A é de " + A[1]);
-		System.out.println("O valor 0 do vetor A é de " + A[2]);
-		System.out.println("O valor 0 do vetor A é de " + A[3]);
-		System.out.println("O valor 0 do vetor A é de " + A[4]);
-		System.out.println("O valor 0 do vetor A é de " + A[5]);
+		System.out.println("O valor 1 do vetor A é de " + A[1]);
+		System.out.println("O valor 2 do vetor A é de " + A[2]);
+		System.out.println("O valor 3 do vetor A é de " + A[3]);
+		System.out.println("O valor 4 do vetor A é de " + A[4]);
+		System.out.println("O valor 5 do vetor A é de " + A[5]);
 
 	}
 
