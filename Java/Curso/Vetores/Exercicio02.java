@@ -6,39 +6,21 @@ public class Exercicio02 {
 		// 2
 		
 		Scanner numeros = new Scanner(System.in);
+				
+		int[] vetNumeros = new int[6];
+				
+		for (int i = 0; i < 6; i++) {
+			System.out.println("Digite o " + (i + 1) + "o número: ");
+			vetNumeros[i] = numeros.nextInt();
+		}
 		
-		int numero1;
-		int numero2;
-		int numero3;
-		int numero4;
-		int numero5;
-		int numero6;
-
-		System.out.println("Informe o primeiro número: ");
-		numero1 = numeros.nextInt();
-		
-		System.out.println("Informe o segundo número: ");
-		numero2 = numeros.nextInt();
-		
-		System.out.println("Informe o terceiro número: ");
-		numero3 = numeros.nextInt();
-		
-		System.out.println("Informe o quarto número: ");
-		numero4 = numeros.nextInt();
-		
-		System.out.println("Informe o quinto número: ");
-		numero5 = numeros.nextInt();
-		
-		System.out.println("Informe o sexto número: ");
-		numero6 = numeros.nextInt();
-		
-		System.out.println("Esse é o primeiro número: " + numero1);
-		System.out.println("Esse é o segundo número: " + numero2);
-		System.out.println("Esse é o terceiro número: " + numero3);
-		System.out.println("Esse é o quarto número: " + numero4);
-		System.out.println("Esse é o quinto número: " + numero5);
-		System.out.println("Esse é o sexto número: " + numero6);
-		
+		System.out.println("Número 1: " + vetNumeros[0]);
+		System.out.println("Número 2: " + vetNumeros[1]);
+		System.out.println("Número 3: " + vetNumeros[2]);
+		System.out.println("Número 4: " + vetNumeros[3]);
+		System.out.println("Número 5: " + vetNumeros[4]);
+		System.out.println("Número 6: " + vetNumeros[5]);
+				
 		numeros.close();
 
 	}
