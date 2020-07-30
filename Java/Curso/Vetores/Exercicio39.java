@@ -3,43 +3,42 @@ import java.util.Scanner;
 public class Exercicio39 {
 
 	public static void main(String[] args) {
-		// 39 (incompleto)
+		// 39
 
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Digite um valor inteiro e positivo: ");
-		int a = teclado.nextInt();
-		int numeroLinhas[] = null;
-		int linha[] = null;
+		int valorDigitado = teclado.nextInt();
 		
-		try {
-			numeroLinhas = new int[a];
-			linha = new int[a];
-
-			for (int i = 0; i < a; i++) {
-				numeroLinhas[i] = i + 1;
-				
-				for (int j = 0; j < a; j++) {
-					linha[i] = i + 1;
-				}
-			}
-			
-		} catch (Exception e) {
-			System.out.println("Não foi possível calcular o Triângulo de Pascal, pois o valor digitado é negativo.");
-		}
+		int denominadorCombinacao = 0;
+		int linha = 0;
+		int contador = valorDigitado;
 		
 		System.out.println();
-		System.out.println("Vetor: ");
-		
-		try {
-			for (int valor : linha) {
-				System.out.print(valor + " ");
+		System.out.println("Triângulo de Pascal: ");
+		while (contador >= 0) {
+			for (int i = 0; i <= valorDigitado - contador; i++) {
+				denominadorCombinacao = fatorial(i) * fatorial((valorDigitado - contador) - i);
+				linha = fatorial(valorDigitado - contador) / denominadorCombinacao;
+				System.out.print(linha + " ");
 			}
-		} catch (Exception e) {
-			System.out.println("Não foi possível mostrar o Triângulo de Pascal, pois o valor digitado é negativo.");
+			
+			contador--;
+			
+			System.out.println();
 		}
 		
 		teclado.close();
+				
+	}
 
+	public static int fatorial(int linhas) {
+		int fatorial = 1;
+
+		for (int i = 1; i <= linhas; i++) {
+			fatorial *= i;
+		}
+
+		return fatorial;
 	}
 
 }
