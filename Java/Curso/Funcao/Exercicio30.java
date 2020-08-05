@@ -3,17 +3,18 @@ package funcao;
 import java.text.DecimalFormat;
 import java.util.Random;
 
-public class Exercicio27 {
+public class Exercicio30 {
 
 	public static void main(String[] args) {
-		// 27
-
+		// 30
+		
 		Random aleatorio = new Random();
 
-		System.out.println(senoTaylor(aleatorio.nextInt(100) + 1));
+		System.out.println(cossenoHiperbolicoTaylor(aleatorio.nextInt(100) + 1));
+
 	}
 
-	public static String senoTaylor(int angulo) {
+	public static String cossenoHiperbolicoTaylor(int angulo) {
 		DecimalFormat formatacaoDecimal = new DecimalFormat("0.00");
 
 		System.out.println("Ângulo em graus: " + angulo);
@@ -26,7 +27,7 @@ public class Exercicio27 {
 		int fatorial = 1;
 
 		for (int i = 0; i <= 5; i++) {
-			int numero = 2 * i + 1;
+			int numero = 2 * i;
 			int numeroFatorial = numero;
 			
 			while (numeroFatorial > 0) {
@@ -36,18 +37,13 @@ public class Exercicio27 {
 			
 			double divisao = (double) (Math.pow(radianos, numero) / fatorial);
 			
-			if (i == 1 || i == 3 || i == 5) {
-				somatorio -= divisao;
-			} else {
-				somatorio += divisao;
-			}
-		
+			somatorio += divisao;
+			
 			fatorial = 1;
 		}
 		
-		System.out.print("Seno - Série de Taylor: ");
+		System.out.print("Cosseno Hiperbólico - Série de Taylor: ");
 		return formatacaoDecimal.format(somatorio);
-	
 	}
 
 }
