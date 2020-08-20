@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Exercicio19 {
+public class Exercicio22 {
 
 	public static void main(String[] args) throws IOException {
-		// 19
+		// 22
 		
 		File arquivo = new File("C:\\Users\\Debora\\arquivo.txt");
 		
@@ -27,27 +27,26 @@ public class Exercicio19 {
 		}
 		
 		FileWriter escrever = new FileWriter(new File("C:\\Users\\Debora\\arquivo.txt"));
-		ArrayList<String> nomes = new ArrayList<String>();
-		ArrayList<Integer> notas = new ArrayList<Integer>();
-
 		Scanner teclado = new Scanner(System.in);
+		ArrayList<Integer> notas = new ArrayList<Integer>();
 		
-		for (int i = 1; i < 5; i++) {
-			System.out.println();
-			System.out.println("Digite um nome: ");
-			String nome = teclado.next();
-			nomes.add(nome);
-			
+		System.out.println("Digite um nome: ");
+		String nome = teclado.next();
+		String informacoes = "Nome: " + nome + " - Notas: ";
+		
+		for (int i = 0; i < 3; i++) {
 			System.out.println("Digite uma nota: ");
 			int nota = teclado.nextInt();
 			notas.add(nota);
 		}
 		
-		System.out.println();
 		Collections.sort(notas);
+		for (int nota : notas) {
+			String numero = String.valueOf(nota);
+			informacoes += numero + ", ";
+		}
 		
-		String nomeNota = "Nome: " + nomes.get(nomes.size() - 1) + " - Nota: " + notas.get(notas.size() - 1);
-		escrever.write(nomeNota);
+		escrever.write(informacoes);
 		escrever.close();
 		
 		FileReader ler = new FileReader(arquivo);
@@ -61,6 +60,7 @@ public class Exercicio19 {
 		
 		ler.close();
 		leitura.close();
+		teclado.close();
 	}
 
 }

@@ -6,13 +6,13 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Random;
 import java.util.Scanner;
 
-public class Exercicio19 {
+public class Exercicio20 {
 
 	public static void main(String[] args) throws IOException {
-		// 19
+		// 20
 		
 		File arquivo = new File("C:\\Users\\Debora\\arquivo.txt");
 		
@@ -26,28 +26,32 @@ public class Exercicio19 {
 
 		}
 		
-		FileWriter escrever = new FileWriter(new File("C:\\Users\\Debora\\arquivo.txt"));
+		Scanner teclado = new Scanner(System.in);
+		Random aleatorio = new Random();
+		
+		int numeroAlunos = aleatorio.nextInt(10) + 0;
 		ArrayList<String> nomes = new ArrayList<String>();
 		ArrayList<Integer> notas = new ArrayList<Integer>();
-
-		Scanner teclado = new Scanner(System.in);
+		ArrayList<String> informacoes = new ArrayList<String>();
 		
-		for (int i = 1; i < 5; i++) {
-			System.out.println();
+		for (int i = 0; i < numeroAlunos; i++) {
 			System.out.println("Digite um nome: ");
 			String nome = teclado.next();
 			nomes.add(nome);
 			
-			System.out.println("Digite uma nota: ");
-			int nota = teclado.nextInt();
+			int nota = aleatorio.nextInt(10) + 1;
 			notas.add(nota);
+			
+			String informacao = "Nome: " + nome + " - Nota final: " + nota;
+			informacoes.add(informacao);
 		}
 		
-		System.out.println();
-		Collections.sort(notas);
+		FileWriter escrever = new FileWriter(new File("C:\\Users\\Debora\\arquivo.txt"));	
+				
+		for (String info : informacoes) {
+			escrever.write(info + ", ");
+		}
 		
-		String nomeNota = "Nome: " + nomes.get(nomes.size() - 1) + " - Nota: " + notas.get(notas.size() - 1);
-		escrever.write(nomeNota);
 		escrever.close();
 		
 		FileReader ler = new FileReader(arquivo);
@@ -61,6 +65,8 @@ public class Exercicio19 {
 		
 		ler.close();
 		leitura.close();
+		teclado.close();
+
 	}
 
 }
