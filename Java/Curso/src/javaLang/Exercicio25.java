@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -62,26 +63,16 @@ public class Exercicio25 {
 		
 		File arquivo2 = new File("C:\\Users\\Debora\\arquivo2.txt");
 		
-		Random aleatorio = new Random();
-		ArrayList<String> nomesLetraEspecifica = new ArrayList<String>();
-		
-		int numero = aleatorio.nextInt(90 - 65 + 1) + 65;
-		char letra = (char) numero;
-		String letraString = String.valueOf(letra);
+		System.out.println();
+		System.out.println("Digite a inicial de um nome que deseja pesquisar: ");
+		String letraString = teclado.next();
 		
 		FileWriter escrever2 = new FileWriter(new File("C:\\Users\\Debora\\arquivo2.txt"));
 
-		for (String nome : nomes) {
-			if (nome.substring(0,1).equals(letraString)) {
-				nomesLetraEspecifica.add(nome);
-			}
-		}
-
-		if (!nomesLetraEspecifica.isEmpty()) {
-			System.out.println("Lista de nomes com inicial " + letraString);
-			for (String nome : nomesLetraEspecifica) {
-				escrever2.write(nome + " ");
-			}
+		for (String item : listaContatos) {
+			if (item.substring(6, 7).equals(letraString)) {
+				escrever2.write(item + " ");
+			} 
 		}
 			
 		escrever2.close();
@@ -91,6 +82,8 @@ public class Exercicio25 {
 		
 		String linha2 = leitura2.readLine();
 		
+		System.out.println();
+		System.out.println("Lista de contatos cujo nome tem a inicial " + letraString + ": ");
 		if (linha2 != null) {
 			System.out.println(linha2);
 		}
@@ -111,12 +104,14 @@ public class Exercicio25 {
 		
 		FileWriter escrever3 = new FileWriter(new File("C:\\Users\\Debora\\arquivo3.txt"));
 		
+		System.out.println();
 		System.out.println("Digite o nome do contato que você deseja remover: ");
 		String nomeRemocao = teclado.next();
 				
 		if (nomes.contains(nomeRemocao)) {
 			int indice = nomes.indexOf(nomeRemocao);
 			listaContatos.remove(indice);
+			nomes.remove(indice);
 		}
 		
 		for (String info : listaContatos) {
@@ -132,7 +127,7 @@ public class Exercicio25 {
 		
 		if (linha3 != null) {
 			System.out.println(linha3);
-		}
+		} 
 		
 		// Pesquisar contato
 		
@@ -150,19 +145,67 @@ public class Exercicio25 {
 		
 		FileWriter escrever4 = new FileWriter(new File("C:\\Users\\Debora\\arquivo4.txt"));
 		
+		System.out.println();
 		System.out.println("Digite o nome do contato que você deseja pesquisar: ");
 		String nomeBusca = teclado.next();
-						
-		if (!nomes.isEmpty()) {
-			if (nomes.contains(nomeBusca)) {
-				int indice = nomes.indexOf(nomeBusca);
-				System.out.println(listaContatos.get(indice));
+		
+		if (nomes.contains(nomeBusca)) {
+			for (String item : listaContatos) {
+				
+				if (nomeBusca.equals(item.substring(6, (6 + nomeBusca.length())))) {
+					escrever4.write(item + " ");
+				}
 			}
 		}
 		
-		teclado.close();
+		escrever4.close();
 		
+		FileReader ler4 = new FileReader(arquivo4);
+		BufferedReader leitura4 = new BufferedReader(ler4);
+		
+		String linha4 = leitura4.readLine();
+		
+		if (linha4 != null) {
+			System.out.println(linha4);
+		} 
+				
 		// Aniversariantes do mês
+		
+		File arquivo5 = new File("C:\\Users\\Debora\\arquivo5.txt");
+		
+		existe = arquivo5.exists();
+		
+		try {
+			if (!existe) {
+				arquivo5.createNewFile();
+			}
+		} catch (IOException e) {
+
+		}
+		
+		FileWriter escrever5 = new FileWriter(new File("C:\\Users\\Debora\\arquivo5.txt"));
+
+		int mesAtual = (new Date().getMonth()) + 1;
+		String mes = String.valueOf(mesAtual);
+		
+		System.out.println();
+		for (String item : listaContatos) {
+			if (mes.equals(item.substring(item.length() - 1))) {	
+				escrever5.write(item + " ");
+			} 
+		}
+		
+		escrever5.close();
+		
+		FileReader ler5 = new FileReader(arquivo5);
+		BufferedReader leitura5 = new BufferedReader(ler5);
+		
+		String linha5 = leitura5.readLine();
+		
+		if (linha5 != null) {
+			System.out.println("Aniversariantes do mês: ");
+			System.out.println(linha5);
+		} 
 		
 		teclado.close();
 	}
