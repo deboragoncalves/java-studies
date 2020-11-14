@@ -2,9 +2,9 @@
 
 #### Requisits
 
-##### Java / JDK / JRE
+##### 1. Java / JDK / JRE
 
-##### IDE can be Eclipse or another one which you prefer.
+##### 2. IDE can be Eclipse or another one which you prefer.
 
 #### To run the project:
 
