@@ -1,5 +1,6 @@
-package com.debora.exercicios;
+package com.debora.exercicios.fundamentos;
 
+import javax.swing.*;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -9,17 +10,13 @@ public class exercicio05 {
 
         // 05. Criar um programa que leia o valor da base e da altura de um triângulo e calcule a área.
 
-        Scanner input = new Scanner(System.in);
+        String inputBase = JOptionPane.showInputDialog("Digite um valor para a base do triângulo: ").replace(",", ".");;
+        double base = Double.parseDouble(inputBase);
 
-        System.out.print("Digite um valor para a base de um triângulo: ");
-        double base = input.nextDouble();
-
-        System.out.print("Digite um valor para a altura de um triângulo: ");
-        double height = input.nextDouble();
+        String inputHeight = JOptionPane.showInputDialog("Digite um valor para a altura do triângulo:").replace(",", ".");
+        double height = Double.parseDouble(inputHeight);
 
         double area = (base * height) / 2;
-
-        // Formatar double
 
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 
@@ -29,5 +26,6 @@ public class exercicio05 {
 
         System.out.println();
         System.out.println("Área: " + decimalFormat.format(area) + " m²");
+
     }
 }

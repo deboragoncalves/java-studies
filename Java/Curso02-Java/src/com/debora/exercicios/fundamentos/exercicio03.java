@@ -1,5 +1,6 @@
-package com.debora.exercicios;
+package com.debora.exercicios.fundamentos;
 
+import javax.swing.*;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -9,17 +10,15 @@ public class exercicio03 {
 
         // 03. Criar um programa que leia o peso e a altura do usuário e imprima no console o IMC.
 
-        Scanner input = new Scanner(System.in);
+        // Input dialog, substituindo por . quando for double.
 
-        System.out.print("Digite o seu peso: ");
-        double weight = input.nextDouble();
+        String inputWeight = JOptionPane.showInputDialog("Digite o seu peso: ").replace(",", ".");
+        double weight = Double.parseDouble(inputWeight);
 
-        System.out.print("Digite a sua altura: ");
-        double height = input.nextDouble();
+        String inputHeight = JOptionPane.showInputDialog("Digite a sua altura: ").replace(",", ".");
+        double height = Double.parseDouble(inputHeight);
 
         double imc = weight / Math.pow(height, 2);
-
-        // Formatar double
 
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 

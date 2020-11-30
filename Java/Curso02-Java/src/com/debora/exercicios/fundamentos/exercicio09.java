@@ -1,5 +1,6 @@
-package com.debora.exercicios;
+package com.debora.exercicios.fundamentos;
 
+import javax.swing.*;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -9,21 +10,16 @@ public class exercicio09 {
 
         // Desafio calculadora
 
-        Scanner input = new Scanner(System.in);
-
         System.out.println("Calculadora: ");
         System.out.println();
 
-        System.out.print("Digite o número 1: ");
-        double num1 = input.nextDouble();
+        String inputNum1 = JOptionPane.showInputDialog("Digite o número 1: ").replace(",", ".");
+        double num1 = Double.parseDouble(inputNum1);
 
-        System.out.print("Digite o número 2: ");
-        double num2 = input.nextDouble();
+        String inputNum2 = JOptionPane.showInputDialog("Digite o número 2: ").replace(",", ".");
+        double num2 = Double.parseDouble(inputNum2);
 
-        System.out.println();
-        System.out.println("Digite uma das operações: +, -, *, /: ");
-        String operation = input.next();
-        System.out.println();
+        String operation = JOptionPane.showInputDialog("Digite uma das operações: +, -, *, /: ");
 
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 

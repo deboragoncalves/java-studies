@@ -1,5 +1,6 @@
-package com.debora.exercicios;
+package com.debora.exercicios.fundamentos;
 
+import javax.swing.*;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -9,15 +10,11 @@ public class exercicio04 {
 
         // 04. Criar um programa que leia um valor e apresente os resultados ao quadrado e ao cubo do valor.
 
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Digite um número: ");
-        double number = input.nextDouble();
+        String inputNumber = JOptionPane.showInputDialog("Digite um número: ").replace(",", ".");
+        double number = Double.parseDouble(inputNumber);
 
         double square = Math.pow(number, 2);
         double cub = Math.pow(number, 3);
-
-        // Formatar double
 
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 
@@ -26,5 +23,6 @@ public class exercicio04 {
         System.out.println();
         System.out.println("Quadrado: " + decimalFormat.format(square));
         System.out.println("Cubo: " + decimalFormat.format(cub));
+
     }
 }

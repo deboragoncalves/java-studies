@@ -1,5 +1,6 @@
-package com.debora.exercicios;
+package com.debora.exercicios.fundamentos;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class exercicio08 {
@@ -10,16 +11,10 @@ public class exercicio08 {
         Trabalho na terca/quinta.
          */
 
-        Scanner input = new Scanner(System.in);
-
         System.out.println("Informe seus dias de trabalho, digitando V ou F: ");
 
-        System.out.print("Você irá trabalhar na terça? ");
-        String workTuesday = input.nextLine().toUpperCase();
-
-        System.out.print("Você irá trabalhar na quinta? ");
-        String workThursday = input.nextLine().toUpperCase();
-
+        String workTuesday = JOptionPane.showInputDialog("Você irá trabalhar na terça? ").toUpperCase();
+        String workThursday = JOptionPane.showInputDialog("Você irá trabalhar na quinta? ").toUpperCase();
 
         System.out.println();
 

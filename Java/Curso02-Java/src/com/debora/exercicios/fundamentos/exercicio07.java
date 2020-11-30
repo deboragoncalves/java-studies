@@ -1,5 +1,6 @@
-package com.debora.exercicios;
+package com.debora.exercicios.fundamentos;
 
+import javax.swing.*;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -9,21 +10,17 @@ public class exercicio07 {
 
         // 07. Crie um programa que recebe os 3 salários de uma pessoa e calcule a média.
 
-        Scanner input = new Scanner(System.in);
-
         System.out.println("Digite seus 3 últimos salários: ");
-        System.out.print("Salário 1: ");
-        double salary1 = input.nextDouble();
+        String inputSalary1 = JOptionPane.showInputDialog("Salário 1: ").replace(",", ".");
+        double salary1 = Double.parseDouble(inputSalary1);
 
-        System.out.print("Salário 2: ");
-        double salary2 = input.nextDouble();
+        String inputSalary2 = JOptionPane.showInputDialog("Salário 2: ").replace(",", ".");
+        double salary2 = Double.parseDouble(inputSalary2);
 
-        System.out.print("Salário 3: ");
-        double salary3 = input.nextDouble();
+        String inputSalary3 = JOptionPane.showInputDialog("Salário 3: ").replace(",", ".");
+        double salary3 = Double.parseDouble(inputSalary3);
 
         double media = (salary1 + salary2 + salary3) / 3;
-
-        // Formatar double
 
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 
@@ -34,5 +31,6 @@ public class exercicio07 {
 
         System.out.println();
         System.out.println("Média: R$ " + decimalFormat.format(media));
+
     }
 }

@@ -1,4 +1,4 @@
-package com.debora.exercicios;
+package com.debora.exercicios.fundamentos;
 
 import java.text.DecimalFormat;
 import java.util.Random;
@@ -9,12 +9,8 @@ public class exercicio02 {
 
         // 02. Criar um programa que leia a temperatura em Fahrenheit e converta para Celsius.
 
-        // Aleatorio entre 0 e 100
-
         Random number = new Random();
         double tempF = number.nextDouble() * 100;
-
-        // Formatar double
 
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 

@@ -1,4 +1,4 @@
-package com.debora.exercicios;
+package com.debora.exercicios.fundamentos;
 
 import java.text.DecimalFormat;
 import java.util.Random;
