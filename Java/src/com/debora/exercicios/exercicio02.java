@@ -3,16 +3,16 @@ package com.debora.exercicios;
 import java.text.DecimalFormat;
 import java.util.Random;
 
-public class exercicio01 {
+public class exercicio02 {
 
     public static void main(String[] args) {
 
-	// 01. Criar um programa que leia a temperatura em Celsius e converta para Fahrenheit.
+        // 02. Criar um programa que leia a temperatura em Fahrenheit e converta para Celsius.
 
         // Aleatorio entre 0 e 100
 
         Random number = new Random();
-        double tempC = number.nextDouble() * 100;
+        double tempF = number.nextDouble() * 100;
 
         // Formatar double
 
@@ -21,9 +21,11 @@ public class exercicio01 {
         final double const1 = 1.8;
         final double const2 = 32;
 
-        double tempF = (tempC * const1) + const2;
+        double tempC = (tempF - const2) / const1;
 
-        System.out.println("Temperatura em Celsius " + decimalFormat.format(tempC) + " C");
         System.out.println("Temperatura em Fahrenheit " + decimalFormat.format(tempF) + " F");
+        System.out.println("Temperatura em Celsius " + decimalFormat.format(tempC) + " C");
+
+
     }
 }
