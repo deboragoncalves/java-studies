@@ -33,9 +33,9 @@ public class exercicio09 {
             default -> System.out.println("Não foi possível realizar a operação. Tente novamente.");
         }
 
-        System.out.println("Número 1: " + decimalFormat.format(num1));
-        System.out.println("Número 2: " + decimalFormat.format(num2));
-        System.out.println("Resultado: " + decimalFormat.format(result));
+        System.out.printf("Número 1: %s \n", decimalFormat.format(num1));
+        System.out.printf("Número 2: %s \n", decimalFormat.format(num2));
+        System.out.printf("Resultado: %s \n", decimalFormat.format(result));
 
     }
 }

@@ -10,7 +10,7 @@ public class exercicio06 {
 
         // 06. Criar um programa que resolve equações do segundo grau (ax2 + bx + c = 0) utilizando a fórmula de Bhaskara. Use como exemplo a = 1, b = 12 e c = -13. Encontre o delta
 
-        System.out.println("Fórmula de Bhaskara: ");
+        System.out.println("Fórmula de Bhaskara: \n");
 
         String inputA = JOptionPane.showInputDialog("Digite o valor de A: ").replace(",", ".");
         double a = Double.parseDouble(inputA);
@@ -25,13 +25,10 @@ public class exercicio06 {
 
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 
-        System.out.println();
-        System.out.println("Valor de a: " + decimalFormat.format(a));
-        System.out.println("Valor de b: " + decimalFormat.format(b));
-        System.out.println("Valor de c: " + decimalFormat.format(c));
-
-        System.out.println();
-        System.out.println("Delta: " + decimalFormat.format(delta));
+        System.out.printf("Valor de a: %s \n", decimalFormat.format(a));
+        System.out.printf("Valor de b: %s \n", decimalFormat.format(b));
+        System.out.printf("Valor de c: %s \n", decimalFormat.format(c));
+        System.out.printf("Delta: %s", decimalFormat.format(delta));
 
     }
 }

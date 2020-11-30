@@ -20,12 +20,9 @@ public class exercicio05 {
 
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 
-        System.out.println();
-        System.out.println("Base: " + decimalFormat.format(base) + " m");
-        System.out.println("Altura: " + decimalFormat.format(height) + " m");
-
-        System.out.println();
-        System.out.println("Área: " + decimalFormat.format(area) + " m²");
+        System.out.printf("Base: %s m \n", decimalFormat.format(base));
+        System.out.printf("Altura: %s m \n", decimalFormat.format(height));
+        System.out.printf("Área: %s m²", decimalFormat.format(area));
 
     }
 }

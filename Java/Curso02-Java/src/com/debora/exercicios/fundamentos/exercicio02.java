@@ -19,8 +19,8 @@ public class exercicio02 {
 
         double tempC = (tempF - const2) / const1;
 
-        System.out.println("Temperatura em Fahrenheit " + decimalFormat.format(tempF) + " F");
-        System.out.println("Temperatura em Celsius " + decimalFormat.format(tempC) + " C");
+        System.out.printf("Temperatura em Fahrenheit %s F \n", decimalFormat.format(tempF));
+        System.out.printf("Temperatura em Celsius %s C", decimalFormat.format(tempC));
 
 
     }

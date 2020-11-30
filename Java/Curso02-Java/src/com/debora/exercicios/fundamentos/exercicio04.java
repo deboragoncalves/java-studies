@@ -18,11 +18,9 @@ public class exercicio04 {
 
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 
-        System.out.println();
-        System.out.println("Número: " + decimalFormat.format(number));
-        System.out.println();
-        System.out.println("Quadrado: " + decimalFormat.format(square));
-        System.out.println("Cubo: " + decimalFormat.format(cub));
+        System.out.printf("Número: %s \n", decimalFormat.format(number));
+        System.out.printf("Quadrado: %s \n", decimalFormat.format(square));
+        System.out.printf("Cubo: %s ", decimalFormat.format(cub));
 
     }
 }

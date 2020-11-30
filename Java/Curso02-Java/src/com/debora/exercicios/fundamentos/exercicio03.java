@@ -22,11 +22,10 @@ public class exercicio03 {
 
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 
-        System.out.println();
-        System.out.println("Peso: " + decimalFormat.format(weight) + " kg");
-        System.out.println("Altura: " + decimalFormat.format(height) + " m");
+        System.out.printf("Peso: %s kg \n", decimalFormat.format(weight));
+        System.out.printf("Altura: %s m \n", decimalFormat.format(height));
 
-        System.out.println("IMC: " + decimalFormat.format(imc));
+        System.out.printf("IMC: %s", decimalFormat.format(imc));
 
     }
 }

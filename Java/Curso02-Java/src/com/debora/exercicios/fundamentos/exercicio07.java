@@ -25,12 +25,10 @@ public class exercicio07 {
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
 
         System.out.println();
-        System.out.println("Salário 1: R$ " + decimalFormat.format(salary1));
-        System.out.println("Salário 2: R$ " + decimalFormat.format(salary2));
-        System.out.println("Salário 3: R$ " + decimalFormat.format(salary3));
-
-        System.out.println();
-        System.out.println("Média: R$ " + decimalFormat.format(media));
+        System.out.printf("Salário 1: R$ %s \n", decimalFormat.format(salary1));
+        System.out.printf("Salário 2: R$ %s \n", decimalFormat.format(salary2));
+        System.out.printf("Salário 3: R$ %s \n", decimalFormat.format(salary3));
+        System.out.printf("Média: R$ %s", decimalFormat.format(media));
 
     }
 }

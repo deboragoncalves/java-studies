@@ -23,7 +23,7 @@ public class exercicio01 {
 
         double tempF = (tempC * const1) + const2;
 
-        System.out.println("Temperatura em Celsius " + decimalFormat.format(tempC) + " C");
-        System.out.println("Temperatura em Fahrenheit " + decimalFormat.format(tempF) + " F");
+        System.out.printf("Temperatura em Celsius %s C \n", decimalFormat.format(tempC));
+        System.out.printf("Temperatura em Fahrenheit %s F", decimalFormat.format(tempF));
     }
 }
