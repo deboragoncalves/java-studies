@@ -14,6 +14,8 @@ public class Area {
 
     public static void main(String[] args) {
 
+        // Opção 2: tornar variável estática.
+
         Area area = new Area();
         double raio = Math.random() * 100;
 
