@@ -1,4 +1,4 @@
-#### Exercises in Java that was done during the course Java (Udemy) and a training in Motoboy.com.
+#### Exercises in Java that was done during the course Java (Udemy) and a training in Motoboy.com and Senior.
 
 #### Requisits
 
@@ -14,7 +14,8 @@
 
 ###### cd java-studies
 ###### cd OutrasAtividades
-###### cd Curso
+###### cd Curso01-Java
+###### cd Curso02-Java
 
 ##### 3. Run as Java Project in your IDE.
 
