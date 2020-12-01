@@ -10,6 +10,6 @@ public class Company {
         Ticket.discount = 0.25;
 
         System.out.println(ticket1);
-        
+
     }
 }
