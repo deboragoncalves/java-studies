@@ -7,11 +7,11 @@ public class Item {
     private Product2 product = new Product2();
 
     public Item() {
-        this.id = Math.round(Math.random());
+        this.id = Math.round(Math.random() * 20);
     }
 
     public Item(int quantity, Product2 product) {
-        this.id = Math.round(Math.random());
+        this.id = Math.round(Math.random() * 20);
         this.quantity = quantity;
         this.product = product;
     }

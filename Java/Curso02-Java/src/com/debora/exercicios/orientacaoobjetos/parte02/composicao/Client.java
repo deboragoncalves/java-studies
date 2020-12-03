@@ -10,11 +10,11 @@ public class Client {
     private ArrayList<Buy> buys = new ArrayList<>();
 
     public Client() {
-        this.id = Math.round(Math.random());
+        this.id = Math.round(Math.random() * 20);
     }
 
     public Client(String name, ArrayList<Buy> buys) {
-        this.id = Math.round(Math.random());
+        this.id = Math.round(Math.random() * 20);
         this.name = name;
         this.buys = buys;
     }
@@ -45,9 +45,7 @@ public class Client {
 
         for (Buy buy: buys) {
 
-            double totalValueBuy = Double.parseDouble(buy.getTotalValue());
-
-            total += totalValueBuy;
+            total += Double.parseDouble(buy.getTotalValue());
 
         }
 

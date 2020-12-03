@@ -13,11 +13,11 @@ public class Product2 {
     // Id em todos os construtores
 
     public Product2() {
-        this.id = Math.round(Math.random());
+        this.id = Math.round(Math.random() * (20));
     }
 
     public Product2(String name, double price) {
-        this.id = Math.round(Math.random());
+        this.id = Math.round(Math.random() * 20);
         this.name = name;
         this.price = price;
     }

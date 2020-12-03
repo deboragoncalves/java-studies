@@ -9,11 +9,11 @@ public class Buy {
     private ArrayList<Item> items = new ArrayList<>();
 
     public Buy() {
-        this.id = Math.round(Math.random());
+        this.id = Math.round(Math.random() * 20);
     }
 
     public Buy(ArrayList<Item> items) {
-        this.id = Math.round(Math.random());
+        this.id = Math.round(Math.random() * 20);
         this.items = items;
     }
 
