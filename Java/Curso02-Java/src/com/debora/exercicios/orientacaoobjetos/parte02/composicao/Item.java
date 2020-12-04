@@ -10,6 +10,8 @@ public class Item {
         this.id = Math.round(Math.random() * 20);
     }
 
+    // TO DO: Produto inválido
+
     public Item(int quantity, Product2 product) {
         this.id = Math.round(Math.random() * 20);
         this.quantity = quantity;

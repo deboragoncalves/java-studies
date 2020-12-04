@@ -39,6 +39,8 @@ public class Client {
         this.buys = buys;
     }
 
+    // TO DO: Adicionar compras
+
     public String getTotalValue() {
 
         double total = 0.0;

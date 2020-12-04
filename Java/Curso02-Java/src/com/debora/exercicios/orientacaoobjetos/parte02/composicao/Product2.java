@@ -42,6 +42,8 @@ public class Product2 {
         this.price = price;
     }
 
+    // TO DO: Adicionar produtos
+
     @Override
     public String toString() {
         return "Código: " + this.getId() + "\nNome: " + this.getName() + "\nPreço: " + this.getPrice();

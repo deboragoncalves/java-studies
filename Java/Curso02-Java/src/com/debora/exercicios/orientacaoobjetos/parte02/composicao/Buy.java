@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 public class Buy {
 
+    // TO DO: Data compra
+
     private long id;
     private ArrayList<Item> items = new ArrayList<>();
 
@@ -28,6 +30,8 @@ public class Buy {
     public void setItems(ArrayList<Item> items) {
         this.items = items;
     }
+
+    // TO DO: Adicionar itens
 
     public String getTotalValue() {
 
