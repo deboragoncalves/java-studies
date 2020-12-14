@@ -6,6 +6,7 @@ public class desafio01 {
 
     Desafio 01: Criar super classe, com atributo e 2 métodos;
      2 subclasses, que herdam os métodos.
+     Modificadores de acesso: protected (herança)
 
      */
 

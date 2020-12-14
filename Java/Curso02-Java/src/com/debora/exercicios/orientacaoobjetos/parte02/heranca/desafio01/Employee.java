@@ -2,12 +2,10 @@ package com.debora.exercicios.orientacaoobjetos.parte02.heranca.desafio01;
 
 public class Employee extends Person {
 
-    private String name;
-    private int age;
     private String departament;
     private int yearsExperience;
 
-    public Employee(String name, int age, String departament, int yearsExperience) {
+    protected Employee(String name, int age, String departament, int yearsExperience) {
         super(name, age);
         this.departament = departament;
         this.yearsExperience = yearsExperience;

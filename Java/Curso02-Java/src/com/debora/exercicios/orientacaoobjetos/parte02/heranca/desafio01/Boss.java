@@ -2,12 +2,7 @@ package com.debora.exercicios.orientacaoobjetos.parte02.heranca.desafio01;
 
 public class Boss extends Employee {
 
-    private String name;
-    private int age;
-    private String departament;
-    private int yearsExperience;
-
-    public Boss(String name, int age, String departament, int yearsExperience) {
+    protected Boss(String name, int age, String departament, int yearsExperience) {
         super(name, age, departament, yearsExperience);
     }
 

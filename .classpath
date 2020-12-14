@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Android/HelloWorld/main/java"/>
+	<classpathentry kind="src" path="Android/NamesList/main/java"/>
+	<classpathentry kind="src" path="Android/Orcamento/main/java"/>
+	<classpathentry excluding="vetores/|matrizes/" kind="src" path="Java/Curso01-Java/src"/>
+	<classpathentry kind="src" path="Java/Curso01-Java/src/matrizes"/>
+	<classpathentry kind="src" path="Java/Curso01-Java/src/vetores"/>
+	<classpathentry kind="src" path="Java/Curso02-Java/src"/>
+	<classpathentry kind="output" path="Java/Curso01-Java/bin"/>
+</classpath>
