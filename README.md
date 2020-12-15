@@ -2,7 +2,7 @@
 
 #### Requisits
 
-##### 1. Java / JDK / JRE
+##### 1. Java / JDK.
 
 ##### 2. IDE: Android Studio
 
