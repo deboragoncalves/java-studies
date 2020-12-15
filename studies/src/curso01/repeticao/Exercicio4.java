@@ -1,4 +1,4 @@
-package curso01.repeticao��o;
+package curso01.repeticao;
 
 public class Exercicio4 {
 

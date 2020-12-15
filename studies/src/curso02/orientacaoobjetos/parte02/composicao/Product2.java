@@ -1,9 +1,5 @@
 package curso02.orientacaoobjetos.parte02.composicao;
 
-import com.debora.exercicios.orientacaoobjetos.parte01.desafio02.Product;
-
-import java.util.ArrayList;
-
 public class Product2 {
 
     private long id;
