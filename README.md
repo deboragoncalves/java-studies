@@ -1,10 +1,10 @@
-#### Exercises in Java that was done during the course Java (Udemy) and a training in Motoboy.com and Senior.
+#### Exercises in Android that was done during the course a training in Motoboy.com.
 
 #### Requisits
 
 ##### 1. Java / JDK / JRE
 
-##### 2. IDE can be Eclipse or another one which you prefer.
+##### 2. IDE: Android Studio
 
 #### To run the project:
 
@@ -15,9 +15,8 @@
 ###### cd java-studies
 ###### cd OutrasAtividades
 ###### cd Curso01-Java
-###### cd Curso02-Java
 
-##### 3. Run as Java Project in your IDE.
+##### 3. Run in your smartphone.
 
 
 
