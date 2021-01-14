@@ -1,6 +1,6 @@
 # Java Studies
 
-### Exercises in Android that was done during a training in Motoboy.com and Senior.
+### Exercises in Java that was done during a training in Motoboy.com and Senior.
 
 #### Requisits to run the project:
 
